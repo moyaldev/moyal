@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300&family=Sofia&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+body{
+    background-color: #e7f1f0ff;
+}
+::selection{
+    background-color: #f09953ff;
+    color: #fff;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    padding: 15px;
+    z-index: 1000000000000000000;
+    background-color: #D6EFD8;
+}
+.list{
+    display: none;
+    align-items: center;
+}
+.list button{
+    background: none;
+    cursor: pointer;
+    color: #000;
+}
+.list button:hover{
+    background: none;
+}
+#menu-icon{
+    display: none;
+}
+#close-icon{
+    display: none;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: left 0.2s linear;
+    z-index: 0;
+}
+nav ul li{
+    list-style: none;
+}
+.active{
+    position: relative;
+    color: #f09953ff;
+}
+.active::after{
+    content: '';
+    position: absolute;
+    background: #53c452ff;
+    left: 6px;
+    right: 6px;
+    bottom: -5px;
+    height: 2px;
+}
+nav ul a{
+    text-decoration: none;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}   
+nav ul a:hover{
+    color: #f09953ff;
+    transition: all 0.2s linear;
+}
+nav h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+}
+nav h1 span{
+    color: #53c452ff;
+}
+nav button{
+    background-color: #53c452ff;
+    padding: 8px 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+}
+nav button:hover{
+    background-color: rgb(77, 160, 75);
+    transition: 0.2s all linear;
+}
+
+#home{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+#home article{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 1.5rem;
+}
+#home article .btn{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+#home article h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    width: 400px;
+    text-align: justify;
+}
+#home article p{
+    width: 450px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    text-align: justify;
+}
+#home article .btn button{
+    background-color: #53c452ff;
+    padding: 8px 40px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+}
+#home article .btn button:hover{
+    background-color: rgb(77, 160, 75);
+    transition: 0.2s all linear;
+}
+#home article .btn p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+#home img{
+    width: 30%;
+    filter: drop-shadow(0 10px 10px #000);
+}
+
+#about .steps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: 100vh;
+}
+.steps h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+}
+.steps p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+}
+.steps .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.steps .image .img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.img p{
+    width: 210px;
+    text-align: justify;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+}
+.img h2{
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+.img img{
+    width: 200px;
+    height: 200px;
+}
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.subMain{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 2rem;
+}
+.subMain h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 50px;
+    width: 500px;
+    text-align: justify;
+}
+.subMain ol{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.subMain ol li{
+    font-family: "Montserrat", sans-serif;
+    width: 500px;
+    text-align: justify;
+    font-size: 20px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 100px 0 50px 0;
+}
+#contact h1{
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    text-underline-offset: 10px;
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    color: #fff;
+}
+#contact form input::-webkit-input-placeholder,
+#contact form textarea::-webkit-input-placeholder{
+    color: #fff;
+}
+#contact form input{
+    width: 300px;
+    height: 50px;
+    font-size: 15px;
+    padding: 20px;
+    background-color: #80AF81;
+    border: none;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+textarea{
+    width: 300px;
+    height: 200px;
+    font-size: 15px;
+    padding: 20px;
+    background-color: #80AF81;
+    border: none;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#contact #submit{
+    padding: 10px 100px;
+    background-color: #1A5319;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+#contact #submit:hover{
+    border-radius: 50px;
+    background-color: #508D4E;
+}
+#result{
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px){
+    nav{
+        width: 100%;
+        max-width: 100%;
+    }
+    ul{
+        flex-direction: column;
+        position: absolute;
+        top: 75px;
+        left: -500px;
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        background-color: #D6EFD8;
+    }
+    nav .list{
+        display: block;
+        position: relative;
+    }
+    #menu-icon{
+        display: block;
+        font-size: 25px;
+    }
+    #close-icon{
+        font-size: 25px;
+    }
+    #home{
+        flex-direction: column-reverse;
+        position: relative;
+        top: 200px;
+    }
+    #home img{
+        width: 100%;
+    }
+    #home article{
+        align-items: center;
+    }
+    #home article h1{
+        width: 250px;
+        font-size: 40px;
+    }
+    #home article p{
+        width: 300px;
+    }
+    #home article .btn p{   
+        display: none;
+    }
+
+    #about{
+        position: relative;
+        top: 400px;
+    }
+    #about h1{
+        width: 300px;
+        text-align: center;
+    }
+    #about .image{
+        flex-direction: column;
+    }
+    #about main{
+        position: relative;
+        top: 200px;
+        flex-direction: column;
+    }
+    #about main .subMain{
+        flex-direction: column;
+        align-items: center;
+    }
+    #about main .subMain h1{
+        width: 300px;
+        font-size: 40px;
+    }
+    #about main .subMain ol li{
+        width: 300px;
+    }
+
+    #contact{
+        position: relative;
+        top: 600px;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="bonsai.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Plant</title>
+</head>
+<body>
+    <nav>
+        <h1><span>PLa</span>nt</h1>
+        <div class="list">
+            <button id="menu-icon"><i class='bx bx-menu'></i></button>
+            <button id="close-icon"><i class='bx bx-x'></i></button>
+        </div>
+            <ul id="list">
+                <a href="#home" class="active"><li>Home</li></a>
+                <a href="#about"><li>About</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+
+            <button>Login</button>
+    </nav>
+
+    <section id="home">
+        <article>
+            <h1>We love helping you to save the earth &#127808;</h1>
+            <p>We help realize your dreams in making a garden. Let's satrt with small things that can change the world. So you cam enjoy fresh air forever</p>
+            <div class="btn">
+                <button>Join</button>
+                <p>See how it works &rarr;</p>
+            </div>
+        </article>
+        <img src="plant.png" alt="">
+    </section>
+    <section id="about">
+        <div class="steps">
+            <h1>Steps How to grow plants</h1>
+            <a href="https://id.wikihow.com/Menanam"><p>follow instructions for more</p></a>
+            <div class="image">
+                <div class="img">
+                    <img src="seed.png" alt="">
+                    <h2>Planting Seeds</h2>
+                    <p>Prepare a pot filled with soil then put the seeds in it.</p>
+                </div>
+                <div class="img">
+                    <img src="finish.png" alt="">
+                    <h2>Water the plant</h2>
+                    <p>Water the plant and place it outside in the sun and wait for it to grow.</p>
+                </div>
+            </div>
+        </div>
+        <main>
+            <img src="bonsai.png" alt="">
+            <div class="subMain">
+                <h1>Make your garden good nutritions</h1>
+                <ol>
+                    <li>Fleshy and moist, mineral-rich banana skins easily diffuse potent nutrients</li>
+                    <li>Eggshells are chock full of nitrogen, calcium, and phosphoric acid</li>
+                    <li>Wood ashes are typically used to raise soil pil and can either be scattered or composted</li>
+                </ol>                
+            </div>
+        </main>
+    </section>
+    <section id="contact">
+        <h1>Contact</h1>
+        <form method="POST" id="form">
+
+            <input type="hidden" name="access_key" value="eb09b2c4-8caf-4937-9f73-9521058827f4">
+        
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="number" name="number" placeholder="Number Phone" required>
+            <textarea name="message" ols="30" rows="10" placeholder="Message" required></textarea>
+            <div class="h-captcha" data-captcha="true"></div>
+        
+            <button type="submit" id="submit">Send</button>
+        
+            <div id="result"></div>
+        
+        </form>
+    </section>
+</body>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+<script src="script.js"></script>
+</html>
