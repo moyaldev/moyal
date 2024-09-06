@@ -290,8 +290,6 @@ section:nth-child(even){
 }
 #containerProject{
     display: none;
-    display: flex;
-    flex-wrap: wrap;
 }
 .pakJayus a{        
     display: flex;
