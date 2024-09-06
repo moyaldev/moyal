@@ -68,7 +68,7 @@ sections.forEach(sec => {
 const nav = document.getElementById("navbar");
 
 window.addEventListener("scroll", function(){
-if(window.scrollY >= 600){
+if(window.scrollY >= 550){
   nav.classList.add("fixed")
 }
 else{
@@ -79,18 +79,16 @@ else{
 
 
 var seeMoreButton = document.getElementById("seeMore");
-var seeLessButton = document.getElementById("seeLess");
-var seeMore = document.getElementById("containerProject");
+var project = document.getElementById("containerProject");
 
 seeMoreButton.addEventListener("click", function(){
-seeMore.style.display = "block";
-seeLessButton.style.display = "block";
-seeMoreButton.style.display = "none";
+    if(project.style.display === "none" || project.style.display === ""){
+        project.style.display = "grid"; 
+        project.style.gap = "2rem";
+        seeMoreButton.innerText = "See Less";
+    } else{
+        project.style.display = "none"
+        seeMoreButton.innerText = "See More"
 
-})
-seeLessButton.addEventListener("click", function(){
-seeMore.style.display = "none";
-seeMoreButton.style.display = "block";
-seeLessButton.style.display = "none";
-
+    }
 })
