@@ -124,6 +124,16 @@ a{
 .l-h:hover, .l-h:active{
     filter: saturate(100%);
 }
+#l-h{
+    font-size: 30px;
+    color: #51545a;
+    transition: all 0.5s;
+    filter: saturate(0);
+}
+#l-h:hover{
+    filter: saturate(100%);
+    color: #000;
+}
 section:nth-child(even){
     background: #31363F;
 }
