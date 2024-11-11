@@ -84,9 +84,6 @@ nav a.active{
     align-items: center;
     justify-content: center;
 }
-.head img{
-    border-radius: 50px;
-}
 span{
     color: #fff;
     align-content: center;
@@ -167,7 +164,6 @@ section:nth-child(even){
 }
 #home main img{
     width: 100px;
-    border-radius: 50%;
     height: 100px;
 }
 #home main .social{
@@ -425,7 +421,6 @@ footer{
 footer img{
     height: 70px;
     height: 70px;
-    border-radius: 50px;
 }
 .contactMe{
     display: flex;
