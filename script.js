@@ -66,9 +66,10 @@ sections.forEach(sec => {
 
 
 const nav = document.getElementById("navbar");
+const triggerHeight = window.innerHeight * 1;
 
 window.addEventListener("scroll", function(){
-if(window.scrollY >= 590){
+if(window.scrollY > triggerHeight){
   nav.classList.add("fixed")
 }
 else{
