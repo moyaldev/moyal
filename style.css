@@ -171,7 +171,7 @@ section:nth-child(even){
 #home article h1{
     letter-spacing: 10px;
     text-align: center;
-    color: #1A2130;
+    color: #fff;
     font-size: 40px;
     font-family: "CANAVAR", sans-serif;
 }
